@@ -6,3 +6,10 @@ create TABLE if not exists employee_data (
     ed_updated_at DATETIME DEFAULT NULL ON update CURRENT_TIMESTAMP,
     PRIMARY KEY (ed_id)
 );
+
+insert into employee_data (`ed_name`,`ed_email`) values
+    ("Hakeem Olajuwon", "holajuwon@example.com"),
+    ("Kobe Bryant", "kbryant@example.com"),
+    ("Jason William", "jwill@example.com"),
+    ("Rajon Rondo", "rrondo@example.com"),
+    ("Dirk Nowitzki", "dnowitzki@example.com");

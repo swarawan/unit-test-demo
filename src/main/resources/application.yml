@@ -29,9 +29,9 @@ spring:
 
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://153.92.4.220:3306/nuansa_web?serverTimezone=Asia/Jakarta
-    username: developer
-    password: developer123
+    url: jdbc:mysql://localhost:3306/unit_test_demo?serverTimezone=Asia/Jakarta
+    username: root
+    password: 12345678
   hikari:
     minimum_idle: 1
     maximum_pool_size: 2
