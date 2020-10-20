@@ -1,0 +1,43 @@
+server:
+  timezone: Asia/Jakarta
+  country: ID
+  http2:
+    enabled: true
+  compression:
+    enable: false
+  error:
+    whitelable:
+      enabled: false
+
+spring:
+  jackson:
+    time_zone: Asia/Jakarta
+    serialization:
+      fail_on_empty_beans: false
+  jpa:
+    properties:
+      hibernate:
+        ddl-auto: validate
+        enable_lazy_load_no_trans: true
+        show_sql: true
+        format_sql: false
+        generate_statistics: false
+        jdbc:
+          fetch_size: 5000
+          use_scrollable_resultset: false
+          use_streams_for_binary: true
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://153.92.4.220:3306/nuansa_web?serverTimezone=Asia/Jakarta
+    username: developer
+    password: developer123
+  hikari:
+    minimum_idle: 1
+    maximum_pool_size: 2
+    connection_timeout: 30000
+    idle_timeout: 15000
+    auto_reconnect: true
+    pool_prepared_statement: true
+    initialization_fail_timeout: 0
+    tcp_keep_alive: true
