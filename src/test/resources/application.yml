@@ -10,6 +10,8 @@ server:
       enabled: false
 
 spring:
+  flyway:
+    enabled: false
   jackson:
     time_zone: Asia/Jakarta
     serialization:

@@ -8,7 +8,7 @@ import javax.persistence.*
 @Table(name = "employee_data")
 @DynamicInsert
 @DynamicUpdate
-data class EmployeeEntity(
+data class Employee(
 
 	@Id
 	@Column(name = "ed_id")
